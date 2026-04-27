@@ -15,66 +15,81 @@ int main()
 {
 	try
 	{
-		character('a', 1);
+		cout << "Function called with with (a, 1) should return b. Returns: ";
+		cout << character('a', 1) << endl;
 	}
 
 	catch (invalidCharacterException)
 	{
+		cout << "threw invalidCharacterException" << endl;
 	}
 
 	catch (invalidRangeException)
 	{
+		cout << "threw invalidRangeException" << endl;
 	}
 
 	try
 	{
-		character('a', -1);
+		cout << "\nFunction called with (a, -1) should throw an exception. Returns: ";
+		cout << character('a', -1) << endl;
 	}
 	catch (invalidCharacterException)
 	{
+		cout << "threw invalidCharacterException" << endl;
 	}
 
 	catch (invalidRangeException)
 	{
+		cout << "threw invalidRangeException" << endl;
 	}
 
 	try
 	{
-		character('Z', -1);
+		cout << "\nFunction called with (Z, -1) should return Y. Returns: ";
+		cout << character('Z', -1) << endl;
 	}
 
 	catch (invalidCharacterException)
 	{
+		cout << "threw invalidCharacterException" << endl;
 	}
 
 	catch (invalidRangeException)
 	{
+		cout << "threw invalidRangeException" << endl;
 	}
 
 	try
 	{
-		character('?', 5);
+		cout << "\nFunction called with (?, 5) should throw an exception. Returns: ";
+		cout << character('?', 5) << endl;
 	}
 
 	catch (invalidCharacterException)
 	{
+		cout << "threw invalidCharacterException" << endl;
 	}
 
 	catch (invalidRangeException)
 	{
+		cout << "threw invalidRangeException" << endl;
 	}
 
 	try
 	{
-		character('A', 32);
+		cout << "\nFunction called with (A, 32) should throw an exception. Returns: ";
+		cout << character('A', 32) << endl;
 	}
 
 	catch (invalidCharacterException)
 	{
+		cout << "threw invalidCharacterException" << endl;
 	}
 
 	catch (invalidRangeException)
 	{
+		cout << "threw invalidRangeException" << endl;
 	}
 }
 
