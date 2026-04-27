@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37111.16 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CIS 1202 Programming Assignment #15a", "CIS 1202 Programming Assignment #15a\CIS 1202 Programming Assignment #15a.vcxproj", "{CE96C0BB-C8C8-4EC6-B7EC-062573FCFC16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE96C0BB-C8C8-4EC6-B7EC-062573FCFC16}.Debug|x64.ActiveCfg = Debug|x64
+		{CE96C0BB-C8C8-4EC6-B7EC-062573FCFC16}.Debug|x64.Build.0 = Debug|x64
+		{CE96C0BB-C8C8-4EC6-B7EC-062573FCFC16}.Debug|x86.ActiveCfg = Debug|Win32
+		{CE96C0BB-C8C8-4EC6-B7EC-062573FCFC16}.Debug|x86.Build.0 = Debug|Win32
+		{CE96C0BB-C8C8-4EC6-B7EC-062573FCFC16}.Release|x64.ActiveCfg = Release|x64
+		{CE96C0BB-C8C8-4EC6-B7EC-062573FCFC16}.Release|x64.Build.0 = Release|x64
+		{CE96C0BB-C8C8-4EC6-B7EC-062573FCFC16}.Release|x86.ActiveCfg = Release|Win32
+		{CE96C0BB-C8C8-4EC6-B7EC-062573FCFC16}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4729A9F1-FA76-4AFD-8A02-A58577D2B53C}
+	EndGlobalSection
+EndGlobal
