@@ -13,13 +13,69 @@ char character(char, int);
 
 int main()
 {
-	char start;
-	int offset;
+	try
+	{
+		character('a', 1);
+	}
+
+	catch (invalidCharacterException)
+	{
+	}
+
+	catch (invalidRangeException)
+	{
+	}
 
 	try
-		driver
-	catch
-		exception pointer errorMessage
+	{
+		character('a', -1);
+	}
+	catch (invalidCharacterException)
+	{
+	}
+
+	catch (invalidRangeException)
+	{
+	}
+
+	try
+	{
+		character('Z', -1);
+	}
+
+	catch (invalidCharacterException)
+	{
+	}
+
+	catch (invalidRangeException)
+	{
+	}
+
+	try
+	{
+		character('?', 5);
+	}
+
+	catch (invalidCharacterException)
+	{
+	}
+
+	catch (invalidRangeException)
+	{
+	}
+
+	try
+	{
+		character('A', 32);
+	}
+
+	catch (invalidCharacterException)
+	{
+	}
+
+	catch (invalidRangeException)
+	{
+	}
 }
 
 char character(char start, int offset)
@@ -29,12 +85,12 @@ char character(char start, int offset)
 		throw invalidCharacterException();
 	}
 
-	char var = start + offset;
+	char newChar = start + offset;
 
-	if (!isalpha(var) || (isupper(start) && !isupper(var)) || (islower(start) && !islower(var))
+	if (!isalpha(newChar) || (isupper(start) && !isupper(newChar)) || (islower(start) && !islower(newChar)))
 	{ 
 		throw invalidRangeException();
 	}
 		
-	return var;
+	return newChar;
 }
