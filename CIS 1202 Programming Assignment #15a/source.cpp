@@ -6,6 +6,9 @@
 
 using namespace std;
 
+class invalidCharacterException {};
+class invalidRangeException {};
+
 char character(char, int);
 
 int main()
@@ -21,13 +24,17 @@ int main()
 
 char character(char start, int offset)
 {
-	if (not a character)
-		throw exception
+	if (!isalpha(start))
+	{
+		throw invalidCharacterException();
+	}
 
-	char variable calculation
+	char var = start + offset;
 
-	if (offset incorrect)
-		throw exception
+	if (!isalpha(var) || (isupper(start) && !isupper(var)) || (islower(start) && !islower(var))
+	{ 
+		throw invalidRangeException();
+	}
 		
-	return char variable
+	return var;
 }
